@@ -13,6 +13,11 @@
 		6A9CD6DB2339A8D2006A086E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9CD6DA2339A8D2006A086E /* Assets.xcassets */; };
 		6A9CD6DE2339A8D2006A086E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9CD6DD2339A8D2006A086E /* Preview Assets.xcassets */; };
 		6A9CD6E12339A8D2006A086E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9CD6DF2339A8D2006A086E /* LaunchScreen.storyboard */; };
+		6AFC7D4B233AF15400415888 /* CoffeeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC7D4A233AF15400415888 /* CoffeeProtocol.swift */; };
+		6AFC7D4D233AF1D400415888 /* CoffeeDecoratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC7D4C233AF1D400415888 /* CoffeeDecoratorProtocol.swift */; };
+		6AFC7D4F233AF21900415888 /* SimpleCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC7D4E233AF21900415888 /* SimpleCoffee.swift */; };
+		6AFC7D51233AF26900415888 /* CoffeeLatte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC7D50233AF26900415888 /* CoffeeLatte.swift */; };
+		6AFC7D53233B01BA00415888 /* CoffeeLatteStrawberry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFC7D52233B01BA00415888 /* CoffeeLatteStrawberry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		6A9CD6DD2339A8D2006A086E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A9CD6E02339A8D2006A086E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A9CD6E22339A8D2006A086E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFC7D4A233AF15400415888 /* CoffeeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeProtocol.swift; sourceTree = "<group>"; };
+		6AFC7D4C233AF1D400415888 /* CoffeeDecoratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDecoratorProtocol.swift; sourceTree = "<group>"; };
+		6AFC7D4E233AF21900415888 /* SimpleCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoffee.swift; sourceTree = "<group>"; };
+		6AFC7D50233AF26900415888 /* CoffeeLatte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLatte.swift; sourceTree = "<group>"; };
+		6AFC7D52233B01BA00415888 /* CoffeeLatteStrawberry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeLatteStrawberry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		6A9CD6D32339A8D0006A086E /* DecoratorDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				6A9CD6E82339A9B3006A086E /* DecoratorPattern */,
 				6A9CD6D42339A8D0006A086E /* AppDelegate.swift */,
 				6A9CD6D62339A8D0006A086E /* SceneDelegate.swift */,
 				6A9CD6D82339A8D0006A086E /* ContentView.swift */,
@@ -73,6 +84,18 @@
 				6A9CD6DD2339A8D2006A086E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A9CD6E82339A9B3006A086E /* DecoratorPattern */ = {
+			isa = PBXGroup;
+			children = (
+				6AFC7D4A233AF15400415888 /* CoffeeProtocol.swift */,
+				6AFC7D4C233AF1D400415888 /* CoffeeDecoratorProtocol.swift */,
+				6AFC7D4E233AF21900415888 /* SimpleCoffee.swift */,
+				6AFC7D50233AF26900415888 /* CoffeeLatte.swift */,
+				6AFC7D52233B01BA00415888 /* CoffeeLatteStrawberry.swift */,
+			);
+			path = DecoratorPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +170,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9CD6D52339A8D0006A086E /* AppDelegate.swift in Sources */,
+				6AFC7D4B233AF15400415888 /* CoffeeProtocol.swift in Sources */,
 				6A9CD6D72339A8D0006A086E /* SceneDelegate.swift in Sources */,
+				6AFC7D51233AF26900415888 /* CoffeeLatte.swift in Sources */,
 				6A9CD6D92339A8D0006A086E /* ContentView.swift in Sources */,
+				6AFC7D53233B01BA00415888 /* CoffeeLatteStrawberry.swift in Sources */,
+				6AFC7D4D233AF1D400415888 /* CoffeeDecoratorProtocol.swift in Sources */,
+				6AFC7D4F233AF21900415888 /* SimpleCoffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

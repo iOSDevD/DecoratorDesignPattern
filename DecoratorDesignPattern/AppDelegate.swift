@@ -15,7 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let simpleCoffee = SimpleCoffee()
+        printCoffee(coffee: simpleCoffee)
+        let coffeeLatte = CoffeLatte(simpleCoffe: simpleCoffee)
+        printCoffee(coffee: coffeeLatte)
+        
+        let coffeeLatteStrawberry = CoffeeLatteStrawberry(simpleCoffe: simpleCoffee)
+        printCoffee(coffee: coffeeLatteStrawberry)
+        
         return true
+    }
+    
+    func printCoffee(coffee:CoffeeProtocol)  {
+        print("\(coffee.ingredients)  (flavor \(coffee.flavor)) =  \(coffee.cost)")
     }
 
     // MARK: UISceneSession Lifecycle
